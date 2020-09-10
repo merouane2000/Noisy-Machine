@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Merouane Mohamed Elamine Noisy Machine</title>
+    <script>
+        function play(str) {
+
+            if (str === "q" || str==="Q"){
+                document.getElementById("display").innerText="Flasher-Switch-Turn-Signal"
+            } else if (str === "w" || str==="W"){
+                document.getElementById("display").innerText="German-Beer-Bottle-Dropped-On"
+            }else if (str === "e" || str==="E"){
+                document.getElementById("display").innerText="Five-Times-Energetic-Knocking"
+                }else if (str === "a" || str==="A"){
+                document.getElementById("display").innerText="Five-Times-Very-Energetic"
+                }else if (str === "s" || str==="S"){
+                document.getElementById("display").innerText="Times-Knocking-With-Finger"
+                }else if (str === "d" || str==="D"){
+                document.getElementById("display").innerText="Half-Turn-Tighten"
+                }else if (str === "z" || str==="Z"){
+                document.getElementById("display").innerText="Sparrow-Whistles-Chirps"
+                }else if (str === "x" || str==="X"){
+                document.getElementById("display").innerText="Five-Times-Sweeping"
+                }else if (str === "c" || str==="C"){
+                document.getElementById("display").innerText="Big-Ratchet-Half-Turn"
+                }
+
+          var audio = document.getElementById(str);
+          audio.play();
+        }
+        window.document.onkeyup= function(event){
+            let eventKey=event.key;
+            if (eventKey === "q" || eventKey==="Q"){
+                play("Q")
+            } else if (eventKey === "w" || eventKey==="W"){
+                play("W")
+            }else if (eventKey === "e" || eventKey==="E"){
+                play("E")
+                }else if (eventKey === "a" || eventKey==="A"){
+                play("A")
+                }else if (eventKey === "s" || eventKey==="S"){
+                play("S")
+                }else if (eventKey === "d" || eventKey==="D"){
+                play("D")
+                }else if (eventKey === "z" || eventKey==="Z"){
+                play("Z")
+                }else if (eventKey === "x" || eventKey==="X"){
+                play("X")
+                }else if (eventKey === "c" || eventKey==="C"){
+                play("C")
+                }
+
+        }
+      </script>
+  </head>
+  <body>
+
+      <div class="container" id="drum-machine">
+          <h1 class="text-center">Merouane Mohamed Elamine Noisy Machine</h1>
+          <div class="card my-3">
+              <div class="card-body">
+                  
+                  <div class="text-center" id="display">Nothing yet to Display</div>
+              </div>
+          </div>
+          
+  
+          <button class="btn btn-block btn-primary drum-pad" id="drum-0" onclick="play('Q')">
+              Q
+              <audio src="./clip/Q-onclip.mp3" class="clip" id="Q" ></audio>
+
+            </button>
+          <button class="btn btn-block btn-primary drum-pad" id="drum-1" onclick="play('W')">
+              W
+              <audio src="./clip/W-onclip.mp3" class="clip" id="W"></audio>
+            </button>
+          <button class="btn btn-block btn-primary drum-pad" id="drum-2" onclick="play('E')">
+              E
+              <audio src="./clip/E-onclip.mp3" class="clip" id="E"></audio>
+            </button>
+          <button class="btn btn-block btn-primary drum-pad" id="drum-3" onclick="play('A')">
+              A
+              <audio src="./clip/A-onclip.mp3" class="clip" id="A"></audio>
+            </button>
+          <button class="btn btn-block btn-primary drum-pad" id="drum-4" onclick="play('S')">
+              S
+              <audio src="./clip/S-onclip.mp3" class="clip" id="S"></audio>
+            </button>
+          <button class="btn btn-block btn-primary drum-pad" id="drum-5" onclick="play('D')">
+              D
+              <audio src="./clip/D-onclip.mp3" class="clip" id="D"></audio>
+            </button>
+          <button class="btn btn-block btn-primary drum-pad" id="drum-6" onclick="play('Z')">
+              Z
+              <audio src="./clip/Z-onclip.mp3" class="clip" id="Z"></audio>
+            </button>
+          <button class="btn btn-block btn-primary drum-pad" id="drum-7" onclick="play('X')">
+              X
+              <audio src="./clip/X-oclip.mp3" class="clip" id="X"></audio>
+            </button>
+          <button class="btn btn-block btn-primary drum-pad" id="drum-8" onclick="play('C')">
+              C
+              <audio src="./clip/C-onclip.mp3" class="clip" id="C"></audio>
+            </button>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
